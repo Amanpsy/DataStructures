@@ -31,6 +31,14 @@ namespace DataStructures
             Console.WriteLine("{0} added into linked list", Node.data);
 
         }
+        public void AddFirst(int data)
+        {
+            node Node = new node(data);
+            Node.next = head;
+            head = Node;
+            Console.WriteLine("{0} added into linked list", Node.data);
+        }
+
 
         public void Display ()
         {

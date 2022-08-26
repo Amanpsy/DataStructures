@@ -18,9 +18,11 @@ namespace DataStructures
 
                 case 1:
                     linkedlist Linkedlist = new linkedlist();
-                    Linkedlist.Add(56);
-                    Linkedlist.Add(30);
-                    Linkedlist.Add(70);
+                    Linkedlist.AddFirst(70);
+                    Linkedlist.AddFirst(30);
+                    Linkedlist.AddFirst(56);
+                    Linkedlist.Display();
+                    break;
 
                     break;
             
