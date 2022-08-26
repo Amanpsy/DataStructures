@@ -18,18 +18,16 @@ namespace DataStructures
 
                 case 1:
                     linkedlist Linkedlist = new linkedlist();
-                    Linkedlist.AddFirst(70);
-                    Linkedlist.AddFirst(30);
-                    Linkedlist.AddFirst(56);
+                    Linkedlist.Append(56);
+                    Linkedlist.Append(70);
                     Linkedlist.Display();
-                    break;
+                    Linkedlist.Insert(30, 2);
+                    Linkedlist.Display();
 
                     break;
-            
-            
-            
             }
-           
+
+            Console.ReadLine();
         }
     }
 }

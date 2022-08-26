@@ -9,7 +9,7 @@ namespace DataStructures
     internal class node
     {
         public int data;
-        public node next;
+        public node next= null ;
          
         public node (int data)
         {

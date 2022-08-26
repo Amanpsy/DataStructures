@@ -39,7 +39,39 @@ namespace DataStructures
             Console.WriteLine("{0} added into linked list", Node.data);
         }
 
+        public void Append(int data)
+        {
+            Add(data);
+        }
 
+        public node Insert(int data, int position)
+        {
+            if (position < 1)
+                Console.WriteLine("Invalid position");
+
+            node Node = new node(data);
+            if (position == 1)
+            {
+                Node.next = head;
+                head = Node;
+            }
+            else
+            {
+                while (position-- != 0)
+                {
+                    if (position == 1)
+                    {
+                        Node.next = head.next;
+                        head.next = Node;
+                        break;
+                    }
+                    head = head.next;
+                }
+                if (position != 1)
+                    Console.WriteLine("Position is out of range");
+            }
+            return head;
+        }
         public void Display ()
         {
             Console.WriteLine("\nDisplaying Nodes\n");
