@@ -18,11 +18,13 @@ namespace DataStructures
 
                 case 1:
                     linkedlist Linkedlist = new linkedlist();
+
                     Linkedlist.Append(56);
                     Linkedlist.Append(30);
                     Linkedlist.Append(70);
                     Linkedlist.Display();
-
+                    Linkedlist.Pop();
+                    Linkedlist.Display();
                     break;
             }
 
