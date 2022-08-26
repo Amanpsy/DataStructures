@@ -23,8 +23,8 @@ namespace DataStructures
                     Linkedlist.Append(30);
                     Linkedlist.Append(70);
                     Linkedlist.Display();
-                    Linkedlist.PopLast();
-                    Linkedlist.Display();
+                    Linkedlist.Search(30);
+                    Linkedlist.Search(70);
                     break;
             }
 
